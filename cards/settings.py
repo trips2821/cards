@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'card_blog.apps.CardBlogConfig'
+    'rest_framework',
+
+    'card_blog.apps.CardBlogConfig',
 ]
 
 MIDDLEWARE = [

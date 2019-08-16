@@ -1,3 +1,9 @@
-from django.shortcuts import render
+from rest_framework import generics
 
-# Create your views here.
+from card_blog.models import Card
+from card_blog.serializers import CardSerializer
+
+class CardViewSet(generics.ListAPIView):
+    queryset = Card.objects.all()
+    serializer_class = CardSerializer
+
